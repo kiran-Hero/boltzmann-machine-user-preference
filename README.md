@@ -52,7 +52,7 @@ The values are represented as:
 The dataset is stored in:
 dataset/user_preferences.csv
 
-5. Technologies Used
+## 5. Technologies Used
 - Python
 - NumPy
 - Pandas
@@ -62,7 +62,7 @@ dataset/user_preferences.csv
 - Jupyter Notebook
 - Git
 - GitHub
-6. Model Architecture
+## 6. Model Architecture
 This project uses a Restricted Boltzmann Machine (RBM), which is
 a simplified form of a Boltzmann Machine.
 The model contains:
@@ -91,7 +91,7 @@ of the visible user preferences.
 The hidden units are not manually assigned labels. Their meanings
 are interpreted after training by analyzing their activations and
 learned weights.
-7. Methodology
+## 7. Methodology
 The project follows these steps:
 1. Create binary user-preference data.
 2. Load the dataset using Pandas.
@@ -106,7 +106,7 @@ The project follows these steps:
 11. Analyze the learned weights.
 12. Interpret the latent features.
 13. Visualize the results.
-8. RBM Training
+## 8. RBM Training
 The model is trained using Contrastive Divergence.
 During training, the RBM performs the following process:
 User Preference Data
@@ -131,7 +131,7 @@ Update Weights and Biases
 
 This process is repeated for multiple epochs so that the model
 can learn useful hidden representations.
-9. Hidden Unit Activation Analysis
+## 9. Hidden Unit Activation Analysis
 After training, hidden-unit probabilities are calculated for
 each user.
 For example:
@@ -143,7 +143,7 @@ A higher value means that the corresponding hidden unit is
 more strongly activated for that user's preference pattern.
 The hidden activations are used to compare different users
 and identify similar preference patterns.
-10. Latent Feature Analysis
+## 10. Latent Feature Analysis
 The learned weights between the visible and hidden layers are
 analyzed to identify the preferences most strongly associated
 with each hidden unit.
@@ -184,13 +184,13 @@ This heatmap shows the relationship between user-preference
 features and the hidden units.
 The strongest learned weights are used to interpret the
 possible meaning of each hidden unit.
-11.4 Hidden Activation Values
+## 11.4 Hidden Activation Values
 The numerical hidden-unit activation values are saved in:
 results/hidden_activation_values.csv
 
 This file contains the activation values of H1, H2, H3 and H4
 for every user.
-12. Project Structure
+## 12. Project Structure
 boltzmann-machine-user-preference/
 │
 ├── README.md
@@ -217,7 +217,7 @@ boltzmann-machine-user-preference/
     ├── hidden_activation_output.png
     └── latent_feature_output.png
 
-13. How to Run the Project
+## 13. How to Run the Project
 Step 1: Clone the repository
 git clone https://github.com/kiran-Hero/boltzmann-machine-user-preference.git
 
@@ -237,7 +237,7 @@ pip install -r requirements.txt
 Step 6: Run the Boltzmann Machine
 python src/boltzmann_machine.py
 
-14. Output Files
+## 14. Output Files
 After successful execution, the following files are generated:
 results/training_loss.png
 results/hidden_activations.png
@@ -246,7 +246,7 @@ results/hidden_activation_values.csv
 
 These files contain the training results, hidden-unit
 activations and learned latent features.
-15. Conclusion
+## 15. Conclusion
 The Restricted Boltzmann Machine successfully learns hidden
 representations from binary user-preference data.
 The hidden-unit activations provide information about different
@@ -254,14 +254,14 @@ user patterns, while the learned weights help identify latent
 features associated with combinations of user preferences.
 The project demonstrates how a Boltzmann Machine can be used
 to discover hidden structures in binary preference data.
-16. Limitations
+## 16. Limitations
 - The dataset used in this project is relatively small.
 - User preferences are represented using binary values.
 - The interpretation of hidden units depends on the learned
   weights and activations.
 - More users and preference categories could improve the
   quality of the learned representations.
-17. Future Enhancements
+## 17. Future Enhancements
 The project can be extended by:
 - Using a larger real-world user-preference dataset.
 - Increasing the number of hidden units.
@@ -270,11 +270,11 @@ The project can be extended by:
 - Adding recommendation functionality.
 - Using real movie, music or product preference datasets.
 - Developing a web interface for user preference analysis.
-18. Author
+## 18. Author
 Kiran Saravanan
 B.Tech Artificial Intelligence and Machine Learning
 Veltech
-19. References
+## 19. References
 1. Hinton, G. E. – A Practical Guide to Training Restricted
    Boltzmann Machines.
 2. NumPy Documentation.
